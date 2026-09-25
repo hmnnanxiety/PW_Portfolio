@@ -1,0 +1,116 @@
+E:\UGM - TRPL\PortofolioW2026
+(Generated .git, .next, node_modules, and *.tsbuildinfo excluded.)
+|-- assets-source
+|   |-- doodles
+|   |   \-- svg
+|   |       |-- burst-blue.svg
+|   |       |-- burst-orange.svg
+|   |       |-- code-braces.svg
+|   |       |-- dot.svg
+|   |       |-- question.svg
+|   |       |-- spark.svg
+|   |       |-- squiggle-blue.svg
+|   |       |-- squiggle-orange.svg
+|   |       \-- zzz.svg
+|   |-- mascot
+|   |   |-- actions
+|   |   |   |-- dimeees-action-celebrate.png
+|   |   |   |-- dimeees-action-coding.png
+|   |   |   |-- dimeees-action-coffee.png
+|   |   |   |-- dimeees-action-peek.png
+|   |   |   |-- dimeees-action-photography.png
+|   |   |   |-- dimeees-action-point.png
+|   |   |   |-- dimeees-action-reading.png
+|   |   |   |-- dimeees-action-sleep-hug.png
+|   |   |   |-- dimeees-action-thumbsup.png
+|   |   |   \-- dimeees-action-wave.png
+|   |   \-- expressions
+|   |       |-- dimeees-expression-confused.png
+|   |       |-- dimeees-expression-default.png
+|   |       |-- dimeees-expression-excited.png
+|   |       |-- dimeees-expression-focused.png
+|   |       |-- dimeees-expression-happy.png
+|   |       |-- dimeees-expression-sarcastic.png
+|   |       |-- dimeees-expression-sleepy.png
+|   |       |-- dimeees-expression-smug.png
+|   |       |-- dimeees-expression-surprised.png
+|   |       |-- dimeees-expression-thinking.png
+|   |       |-- dimeees-expression-tired.png
+|   |       \-- dimeees-expression-wink.png
+|   \-- source-sheets
+|       |-- chibi_character_sticker_pack.png
+|       |-- colourful_creative_tech_sticker_sheet.png
+|       \-- expressive_cartoon_avatar_sticker_sheet.png
+|-- docs
+|   |-- AGENTS.md
+|   |-- assets-README.md
+|   |-- CONTENT-NEEDED.md
+|   |-- design-tokens.original.css
+|   |-- FOLDER-TREE.txt
+|   |-- IMPLEMENTATION.md
+|   |-- PRD-dimeees-v1.0.md
+|   |-- project-template.mdx
+|   \-- QA-REPORT.md
+|-- public
+|   \-- README.md
+|-- scripts
+|   |-- smoke-http.ts
+|   \-- validate-content.ts
+|-- src
+|   |-- app
+|   |   |-- about
+|   |   |   \-- page.tsx
+|   |   |-- contact
+|   |   |   \-- page.tsx
+|   |   |-- work
+|   |   |   |-- [slug]
+|   |   |   |   \-- page.tsx
+|   |   |   \-- page.tsx
+|   |   |-- layout.tsx
+|   |   |-- not-found.tsx
+|   |   |-- page.tsx
+|   |   |-- robots.ts
+|   |   \-- sitemap.ts
+|   |-- components
+|   |   |-- contact-links.tsx
+|   |   |-- copy-email-button.tsx
+|   |   |-- placeholder.tsx
+|   |   |-- project-card.tsx
+|   |   |-- project-detail.tsx
+|   |   |-- site-nav.tsx
+|   |   |-- site-shell.tsx
+|   |   \-- work-filters.tsx
+|   |-- content
+|   |   |-- projects
+|   |   |   |-- bodies.ts
+|   |   |   |-- orca.mdx
+|   |   |   |-- rag-chatbot.mdx
+|   |   |   |-- records.ts
+|   |   |   |-- sections.ts
+|   |   |   \-- showcase-layout-preview.mdx
+|   |   |-- profile.ts
+|   |   \-- taxonomy.ts
+|   |-- lib
+|   |   |-- metadata.ts
+|   |   |-- project-repository.ts
+|   |   |-- project-schema.ts
+|   |   |-- projects.ts
+|   |   \-- site.ts
+|   |-- styles
+|   |   |-- design-tokens.css
+|   |   \-- globals.css
+|   \-- mdx-components.tsx
+|-- tests
+|   \-- content.test.ts
+|-- .env.example
+|-- .env.local
+|-- .gitignore
+|-- .prettierignore
+|-- eslint.config.mjs
+|-- next-env.d.ts
+|-- next.config.mjs
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.mjs
+|-- README.md
+\-- tsconfig.json

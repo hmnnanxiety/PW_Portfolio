@@ -1,0 +1,36 @@
+:root {
+  /* Source-of-truth brand primitives: reserved, not applied during grayscale UX. */
+  --ink: #1a1a1a;
+  --blue: #2563ff;
+  --yellow: #ffc629;
+  --orange: #ff7a00;
+  --canvas: #faf9f6;
+  --paper: #ffffff;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+  --page-gutter: clamp(20px, 4vw, 64px);
+  --content-max: 1440px;
+  --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 700ms;
+
+  /* System fallback until the owner supplies licensed Eudoxus Sans files. */
+  --font-body: Arial, Helvetica, ui-sans-serif, system-ui, sans-serif;
+  --background: #f7f7f7;
+  --foreground: #1a1a1a;
+  --surface: #ffffff;
+  --surface-muted: #e9e9e9;
+  --muted: #595959;
+  --line: #cccccc;
+  --accent: #1a1a1a;
+  --on-accent: #ffffff;
+  --focus: #1a1a1a;
+  --text-display: clamp(4.25rem, 12.5vw, 11rem);
+  --text-title: clamp(2.75rem, 6vw, 5.5rem);
+  --text-section: clamp(2rem, 4vw, 3.5rem);
+  --section-space: clamp(4rem, 8vw, 7.5rem);
+  --reading-width: 66ch;
+}

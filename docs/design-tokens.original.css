@@ -1,0 +1,28 @@
+:root {
+  /* Brand colors */
+  --ink: #1a1a1a;
+  --blue: #2563ff;
+  --yellow: #ffc629;
+  --orange: #ff7a00;
+  --canvas: #faf9f6;
+  --paper: #ffffff;
+
+  /* Typography */
+  --font-sans: "Eudoxus Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Shape */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --page-gutter: clamp(20px, 4vw, 64px);
+  --content-max: 1440px;
+
+  /* Motion */
+  --ease-brand: cubic-bezier(.22, 1, .36, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --duration-slow: 700ms;
+}

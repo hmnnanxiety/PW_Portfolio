@@ -1,0 +1,11 @@
+.next
+node_modules
+assets-source
+docs/PRD-dimeees-v1.0.md
+docs/AGENTS.md
+docs/project-template.mdx
+docs/design-tokens.original.css
+docs/assets-README.md
+package-lock.json
+next-env.d.ts
+artifacts
