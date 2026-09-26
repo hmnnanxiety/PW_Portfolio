@@ -1,0 +1,26 @@
+dimeees Brand Pack v0.2
+
+Core references:
+- brand/references/dimeees-identity-board-v1.png
+
+Hero candidates:
+- brand/hero/dimeees-hero-head-flat-candidate.png
+- brand/hero/dimeees-hero-head-alt-candidate.png
+
+Wordmark accents:
+- brand/accents/wordmark-dot-blue.svg
+- brand/accents/wordmark-smile-blue.svg
+- brand/accents/wordmark-rays-yellow.svg
+
+Mascot library:
+- mascot/actions/*
+- mascot/expressions/*
+
+Doodle library:
+- doodles/svg/*
+
+Specs:
+- specs/LOGO-SYSTEM.md
+- specs/HERO-SPEC.md
+- specs/ASSET-MAP.md
+- specs/CODEX-HANDOFF.md

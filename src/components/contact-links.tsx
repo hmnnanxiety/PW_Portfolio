@@ -2,34 +2,44 @@ import { profile } from "@/content/profile";
 import { CopyEmailButton } from "@/components/copy-email-button";
 
 export function ContactLinks({ copyEmail = false }: { copyEmail?: boolean }) {
-  const socials = [
-    ["GitHub", profile.github],
-    ["LinkedIn", profile.linkedin],
-    ["Instagram", profile.instagram],
+  const destinations = [
+    ["Email", profile.email ? `mailto:${profile.email}` : null, "say hi"],
+    [
+      "School",
+      profile.schoolEmail ? `mailto:${profile.schoolEmail}` : null,
+      "academic stuff",
+    ],
+    ["GitHub", profile.github, "see the code"],
+    ["LinkedIn", profile.linkedin, "professional me"],
+    ["Instagram", profile.instagram, "visual chaos"],
   ] as const;
   return (
     <ul className="contact-list">
-      <li>
-        <span className="contact-label">Email</span>
-        {profile.email ? (
-          <>
-            <a href={`mailto:${profile.email}`}>{profile.email}</a>
-            {copyEmail && <CopyEmailButton email={profile.email} />}
-          </>
-        ) : (
-          <span className="pending">Address — pending</span>
-        )}
-      </li>
-      {socials.map(([label, url]) => (
+      {destinations.map(([label, url, note]) => (
         <li key={label}>
-          <span className="contact-label">{label}</span>
           {url ? (
-            <a href={url}>
-              Visit {label}
-              <span aria-hidden="true"> ↗</span>
+            <a
+              href={url}
+              className="contact-action"
+              {...(url.startsWith("https:")
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+            >
+              <span>
+                {label} <span aria-hidden="true">↗</span>
+              </span>
+              <span className="contact-note" aria-hidden="true">
+                {note}
+              </span>
+              {url.startsWith("https:") && (
+                <span className="sr-only"> (opens in a new tab)</span>
+              )}
             </a>
           ) : (
-            <span className="pending">URL — pending</span>
+            <span className="pending">{label} — pending</span>
+          )}
+          {label === "Email" && copyEmail && profile.email && (
+            <CopyEmailButton email={profile.email} />
           )}
         </li>
       ))}

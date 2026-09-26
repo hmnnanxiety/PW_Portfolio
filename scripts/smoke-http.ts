@@ -10,7 +10,9 @@ async function main() {
   }
   const home = await page("/");
   assert.match(home, /Dimas Satria Widjatmiko \/ dimeees/);
-  assert.match(home, /Hero artwork/);
+  assert.match(home, /dimeees-hero-head-flat/);
+  assert.match(home, /id="identity-heading"/);
+  assert.doesNotMatch(home, /Hero artwork — pending/);
   for (const path of ["/about", "/contact", "/work"]) {
     const html = await page(path);
     assert.equal(

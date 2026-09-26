@@ -63,5 +63,5 @@ console.log(
   `Content validation passed: ${result.data.length} records; ${drafts} explicit drafts; ${result.data.length - drafts} published projects.`,
 );
 console.log(
-  "Content TODO: font, project facts/media, profile details, contact URLs, resume, and canonical domain remain pending.",
+  "Content TODO: project facts/media, personal narrative/education/experience, resume, and canonical domain remain pending.",
 );
