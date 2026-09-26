@@ -4,21 +4,21 @@
 
 Foundation and grayscale UX implemented in E:\UGM - TRPL\PortofolioW2026.
 Git initialized on codex/foundation-grayscale. No commits, remote, or deployment created.
-Brand and motion milestones are not started.
+At the time of this historical report, Brand and Motion had not started. For the completed static Brand Layer pass, see [BRAND-LAYER-REPORT.md](BRAND-LAYER-REPORT.md). Motion remains out of scope.
 
 ## Final checks
 
-| Check | Result |
-| --- | --- |
-| npm run lint | PASS; zero warnings/errors |
-| npm run typecheck | PASS; Next route type generation and tsc --noEmit |
-| npm test | PASS; 8 tests |
-| npm run validate:content | PASS; 3 explicit drafts, 0 published projects |
-| npm run build, preview enabled | PASS; core pages and 3 local review project routes |
-| npm run build, PORTFOLIO_PREVIEW=false | PASS; no draft routes prerendered |
-| HTTP smoke checks, preview build | PASS; all core routes, both detail layouts, 404s, metadata, filtering, sitemap, robots |
-| HTTP smoke checks, public build | PASS; all three draft URLs return 404; archive/home/sitemap exclude drafts |
-| npm install audit | 0 reported vulnerabilities |
+| Check                                  | Result                                                                                 |
+| -------------------------------------- | -------------------------------------------------------------------------------------- |
+| npm run lint                           | PASS; zero warnings/errors                                                             |
+| npm run typecheck                      | PASS; Next route type generation and tsc --noEmit                                      |
+| npm test                               | PASS; 8 tests                                                                          |
+| npm run validate:content               | PASS; 3 explicit drafts, 0 published projects                                          |
+| npm run build, preview enabled         | PASS; core pages and 3 local review project routes                                     |
+| npm run build, PORTFOLIO_PREVIEW=false | PASS; no draft routes prerendered                                                      |
+| HTTP smoke checks, preview build       | PASS; all core routes, both detail layouts, 404s, metadata, filtering, sitemap, robots |
+| HTTP smoke checks, public build        | PASS; all three draft URLs return 404; archive/home/sitemap exclude drafts             |
+| npm install audit                      | 0 reported vulnerabilities                                                             |
 
 Final production build artifacts were built with PORTFOLIO_PREVIEW=false. Local development review uses the ignored .env.local with preview enabled. Always rebuild when changing the preview flag.
 

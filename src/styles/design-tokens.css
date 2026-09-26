@@ -1,5 +1,5 @@
 :root {
-  /* Source-of-truth brand primitives: reserved, not applied during grayscale UX. */
+  /* Approved brand primitives. Yellow/orange appear only within selected artwork. */
   --ink: #1a1a1a;
   --blue: #2563ff;
   --yellow: #ffc629;
@@ -17,20 +17,27 @@
   --duration-base: 320ms;
   --duration-slow: 700ms;
 
-  /* System fallback until the owner supplies licensed Eudoxus Sans files. */
-  --font-body: Arial, Helvetica, ui-sans-serif, system-ui, sans-serif;
-  --background: #f7f7f7;
-  --foreground: #1a1a1a;
-  --surface: #ffffff;
-  --surface-muted: #e9e9e9;
-  --muted: #595959;
-  --line: #cccccc;
-  --accent: #1a1a1a;
-  --on-accent: #ffffff;
-  --focus: #1a1a1a;
+  /* Local Eudoxus is bound once by the root layout. */
+  --font-body:
+    var(--font-eudoxus, Arial), Helvetica, ui-sans-serif, system-ui, sans-serif;
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --surface: var(--paper);
+  --surface-muted: #eeede9;
+  --muted: #595751;
+  --line: #d5d2ca;
+  --control-line: #77736b;
+  --accent: var(--blue);
+  --accent-hover: var(--ink);
+  --on-accent: var(--paper);
+  --link: var(--blue);
+  --focus: var(--blue);
   --text-display: clamp(4.25rem, 12.5vw, 11rem);
   --text-title: clamp(2.75rem, 6vw, 5.5rem);
   --text-section: clamp(2rem, 4vw, 3.5rem);
+  --text-project: clamp(1.375rem, 2.2vw, 1.75rem);
+  --text-body: clamp(1rem, 1.15vw, 1.125rem);
+  --text-meta: 0.875rem;
   --section-space: clamp(4rem, 8vw, 7.5rem);
   --reading-width: 66ch;
 }

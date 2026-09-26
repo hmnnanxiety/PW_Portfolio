@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Mascot } from "@/components/mascot";
 import { ContactLinks } from "@/components/contact-links";
 import { Placeholder } from "@/components/placeholder";
 import { ProjectCard } from "@/components/project-card";
@@ -16,15 +17,12 @@ export default function HomePage() {
     <div className="page-container">
       <section className="hero" aria-labelledby="identity-heading">
         <div>
-          <p className="eyebrow">Multimedia + software</p>
+          <p className="eyebrow">Visuals × Interfaces × Software</p>
           <h1 id="identity-heading">dimeees</h1>
           <p className="hero-name">Dimas Satria Widjatmiko</p>
           <p className="lead">
             Visual work, interfaces, and software experiments.
           </p>
-          {isPreview && (
-            <p className="draft-note mt-3">Positioning copy — provisional</p>
-          )}
           <div className="flex flex-wrap items-center gap-6 mt-8">
             <Link className="button-link" href="#selected-work">
               Explore selected work{" "}
@@ -100,27 +98,79 @@ export default function HomePage() {
             <p className="eyebrow">Visual / Multimedia</p>
             <h3>Image & movement</h3>
             <p className="copy">
-              Photography, motion graphics, graphic design, and multimedia work.
+              Photography, videography, motion, and visual design.
             </p>
           </div>
           <div className="capability">
             <p className="eyebrow">Interfaces / Software</p>
             <h3>Design & implementation</h3>
             <p className="copy">
-              UI/UX, frontend development, and software engineering.
+              UI/UX, frontend development, software development, and interface
+              implementation.
             </p>
           </div>
           <div className="capability">
             <p className="eyebrow">AI / Experiments</p>
             <h3>Questions & exploration</h3>
             <p className="copy">
-              AI/ML experiments and emerging technical projects.
+              AI/ML, RAG, backend exploration, data workflows, and technical
+              experimentation.
             </p>
+          </div>
+        </div>
+        <div className="toolkit" aria-labelledby="toolkit-heading">
+          <h3 id="toolkit-heading">Selected toolkit</h3>
+          <div className="toolkit-columns">
+            <div>
+              <h4 className="eyebrow">Engineering / Programming</h4>
+              <ul className="toolkit-list">
+                <li>Python</li>
+                <li>TypeScript</li>
+                <li>Java</li>
+                <li>HTML / CSS</li>
+                <li>MySQL</li>
+                <li>
+                  C++ <span>— familiar</span>
+                </li>
+                <li>
+                  Kotlin <span>— familiar; Android coursework</span>
+                </li>
+              </ul>
+              <h4 className="eyebrow">QA / Testing</h4>
+              <ul className="toolkit-list">
+                <li>Selenium</li>
+                <li>Page Object Model (POM)</li>
+              </ul>
+              <h4 className="eyebrow">Web / AI</h4>
+              <ul className="toolkit-list">
+                <li>Next.js</li>
+                <li>Frontend Development</li>
+                <li>RAG</li>
+                <li>AI integration</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="eyebrow">Creative / Multimedia</h4>
+              <ul className="toolkit-list">
+                <li>Figma</li>
+                <li>Adobe After Effects</li>
+                <li>DaVinci Resolve</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Premiere Pro</li>
+              </ul>
+              <h4 className="eyebrow">Photo / Video</h4>
+              <ul className="toolkit-list">
+                <li>Photography</li>
+                <li>Videography</li>
+                <li>Camera fundamentals / operation</li>
+                <li>Exposure Triangle fundamentals</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <section
-        className="section split-section"
+        className="section split-section personal-section"
         aria-labelledby="personal-heading"
       >
         <div>
@@ -130,6 +180,9 @@ export default function HomePage() {
             <br />
             behind dimeees.
           </h2>
+          <div className="peek-ledge" aria-hidden="true">
+            <Mascot variant="peek" />
+          </div>
         </div>
         <div>
           <p className="lead">Dimas Satria Widjatmiko</p>
@@ -146,12 +199,15 @@ export default function HomePage() {
         </div>
       </section>
       <section
-        className="section split-section"
+        className="section split-section contact-section"
         aria-labelledby="contact-heading"
       >
         <div>
           <p className="eyebrow mb-4">04 / Contact</p>
-          <h2 id="contact-heading">Get in touch.</h2>
+          <div className="contact-title">
+            <h2 id="contact-heading">Get in touch.</h2>
+            <Mascot variant="wink" />
+          </div>
           <p className="copy mt-5">
             Email and professional profiles, all in one place.
           </p>
