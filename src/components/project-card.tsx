@@ -43,24 +43,41 @@ export function ProjectCard({
         </div>
         <div className="project-card-copy">
           <div className="project-card-topline">
-            <span>
-              {project.categories.map(categoryLabel).join(" / ") ||
-                "Category pending"}
+            <div className="project-card-categories">
+              {project.categories.length ? (
+                project.categories.map((category) => (
+                  <span className="project-category" key={category}>
+                    {categoryLabel(category)}
+                  </span>
+                ))
+              ) : (
+                <span className="project-category">Category pending</span>
+              )}
+            </div>
+
+            <span className="project-year">
+              {project.year ?? "Year pending"}
             </span>
-            <span>{project.year ?? "Year pending"}</span>
           </div>
+
           <Heading className="project-title">
-            {project.title} <span aria-hidden="true">↗</span>
+            <span>{project.title}</span>
+
+            <span className="project-arrow" aria-hidden="true">
+              ↗
+            </span>
           </Heading>
-          <p className="draft-note">
+
+          <p className="project-card-role">
+            {project.role?.join(" / ") ?? "Role & contribution — pending"}
+          </p>
+
+          <p className="draft-note project-card-note">
             {project.fixture
               ? "Layout fixture — not a portfolio project"
               : project.publication === "draft"
                 ? "Draft candidate — content awaiting confirmation"
                 : project.summary}
-          </p>
-          <p className="project-card-role">
-            {project.role?.join(" / ") ?? "Role & contribution — pending"}
           </p>
         </div>
       </Link>

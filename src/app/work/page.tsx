@@ -37,7 +37,7 @@ export default async function WorkPage({ searchParams }: Props) {
           That category is unavailable. Showing all work.
         </p>
       )}
-      <section className="pb-20" aria-label={`${filter.label} projects`}>
+      <section className="page-content" aria-label={`${filter.label} projects`}>
         <p className="results-summary">
           {filter.label} · {projects.length}{" "}
           {isPreview ? "draft / layout" : "published"}{" "}

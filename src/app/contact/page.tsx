@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata("Contact", "/contact");
 export default function ContactPage() {
   return (
-    <div className="page-container">
+    <div className="page-container contact-page">
       <header className="page-intro">
         <p className="eyebrow">Contact</p>
         <div className="contact-title">
@@ -14,7 +14,7 @@ export default function ContactPage() {
         </div>
         <p className="lead">Email and professional profiles.</p>
       </header>
-      <div className="split-section pb-20">
+      <div className="split-section page-content">
         <div>
           <p className="copy">
             For projects, collaborations, or a simple hello, use Email. For

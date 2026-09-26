@@ -1,5 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FirstVisitIntro } from "@/components/first-visit-intro";
+import { FloatingComment } from "@/components/floating-comment";
+import { RevealOnce } from "@/components/reveal-once";
 import { Mascot } from "@/components/mascot";
 import { ContactLinks } from "@/components/contact-links";
 import { ProjectCard } from "@/components/project-card";
@@ -14,8 +17,26 @@ export const metadata = {
 export default function HomePage() {
   const projects = getFeaturedProjects();
   return (
-    <div className="page-container">
+    <div className="page-container home-page">
       <section className="hero" aria-labelledby="identity-heading">
+        <div className="hero-atmosphere" aria-hidden="true">
+          <svg
+            className="hero-ribbon"
+            viewBox="0 0 880 440"
+            fill="none"
+            focusable="false"
+          >
+            <path
+              className="hero-ribbon-body"
+              d="M920 28C670 -30 610 90 734 150C895 228 896 326 751 307C581 285 639 137 747 201C891 287 612 421 347 401C184 389 100 457 -40 466"
+            />
+            <path
+              className="hero-ribbon-edge"
+              d="M920 10C670 -48 610 72 734 132C895 210 896 308 751 289C581 267 639 119 747 183C891 269 612 403 347 383C184 371 100 439 -40 448"
+            />
+          </svg>
+        </div>
+        <FirstVisitIntro />
         <p className="eyebrow">Visuals × Interfaces × Software</p>
         <div className="hero-lockup">
           <Image
@@ -81,12 +102,67 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
+        <FloatingComment />
       </section>
       <section
-        className="section"
+        className="section selected-scene"
         id="selected-work"
         aria-labelledby="selected-heading"
       >
+        <div className="scene-transition" aria-hidden="true">
+          <svg
+            className="scene-bands"
+            viewBox="0 0 1440 280"
+            preserveAspectRatio="none"
+            fill="none"
+            focusable="false"
+          >
+            {/* blurred/background sweep */}
+            <path
+              className="scene-band-ghost"
+              d="
+                M -120 96
+                C 220 42, 500 150, 830 142
+                C 1080 136, 1290 78, 1560 104
+              "
+            />
+
+            {/* thin orange accent */}
+            <path
+              className="scene-band-orange"
+              d="
+                M -120 190
+                C 260 140, 610 198, 940 176
+                C 1180 160, 1370 118, 1560 126
+              "
+            />
+
+            {/* main blue ribbon */}
+            <path
+              id="scene-blue-path"
+              className="scene-band-blue"
+              d="
+                M -120 132
+                C 230 82, 560 176, 880 162
+                C 1110 152, 1320 108, 1560 118
+              "
+            />
+
+            <text className="scene-band-type">
+              <textPath
+                href="#scene-blue-path"
+                startOffset="9%"
+                dy="10"
+              >
+                VISUALS × INTERFACES × SOFTWARE
+              </textPath>
+            </text>
+          </svg>
+
+          <span className="scene-mobile-type">
+            VISUALS × INTERFACES × SOFTWARE
+          </span>
+        </div>
         <div className="section-heading">
           <div>
             <p className="eyebrow">01 / Selected work</p>
@@ -215,9 +291,9 @@ export default function HomePage() {
             <br />
             behind dimeees.
           </h2>
-          <div className="peek-ledge" aria-hidden="true">
+          <RevealOnce className="peek-ledge">
             <Mascot variant="peek" />
-          </div>
+          </RevealOnce>
         </div>
         <div>
           <p className="lead">Dimas Satria Widjatmiko</p>

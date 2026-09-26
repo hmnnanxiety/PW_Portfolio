@@ -1,0 +1,125 @@
+[
+  {
+    "collisions": [
+      {
+        "inside": true,
+        "preset": 0,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 1,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 2,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 3,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 4,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 5,
+        "with": []
+      }
+    ],
+    "introVisible": false,
+    "overflow": false,
+    "phase": {
+      "phase": "waiting",
+      "position": "4"
+    },
+    "width": 320
+  },
+  {
+    "collisions": [
+      {
+        "inside": true,
+        "preset": 0,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 1,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 2,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 3,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 4,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 5,
+        "with": []
+      }
+    ],
+    "introVisible": false,
+    "overflow": false,
+    "phase": {
+      "phase": "waiting",
+      "position": "4"
+    },
+    "width": 768
+  },
+  {
+    "collisions": [
+      {
+        "inside": true,
+        "preset": 0,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 1,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 2,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 3,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 4,
+        "with": []
+      },
+      {
+        "inside": true,
+        "preset": 5,
+        "with": []
+      }
+    ],
+    "introVisible": false,
+    "overflow": false,
+    "phase": {
+      "phase": "waiting",
+      "position": "4"
+    },
+    "width": 1440
+  }
+]

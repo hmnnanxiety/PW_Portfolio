@@ -3,19 +3,43 @@ import Image from "next/image";
 const assets = {
   peek: {
     src: "/mascot/actions/dimeees-action-peek.webp",
-    width: 301,
-    height: 309,
-    sizes: "(max-width: 760px) 120px, 144px",
+    width: 640,
+    height: 640,
   },
   wink: {
     src: "/mascot/expressions/dimeees-expression-wink.webp",
-    width: 415,
-    height: 406,
-    sizes: "(max-width: 760px) 64px, 80px",
+    width: 640,
+    height: 640,
+  },
+
+  default: {
+    src: "/mascot/expressions/dimeees-expression-default.png",
+    width: 640,
+    height: 640,
+  },
+  happy: {
+    src: "/mascot/expressions/dimeees-expression-happy.png",
+    width: 640,
+    height: 640,
+  },
+  thinking: {
+    src: "/mascot/expressions/dimeees-expression-thinking.png",
+    width: 640,
+    height: 640,
+  },
+  smug: {
+    src: "/mascot/expressions/dimeees-expression-smug.png",
+    width: 640,
+    height: 640,
+  },
+  surprised: {
+    src: "/mascot/expressions/dimeees-expression-surprised.png",
+    width: 640,
+    height: 640,
   },
 } as const;
 
-/** Static visual punctuation. Adjacent text carries all meaning and actions. */
+/** Decorative visual punctuation. Adjacent text carries all meaning and actions. */
 export function Mascot({ variant }: { variant: keyof typeof assets }) {
   return (
     <Image
